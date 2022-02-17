@@ -90,7 +90,7 @@ public final class Validate {
      * @param string the string to test
      */
     public static void notEmpty(@Nullable String string) {
-        if (string == null || string.length() == 0)
+        if (string == null)
             throw new IllegalArgumentException("String must not be empty");
     }
 
